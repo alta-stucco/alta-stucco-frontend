@@ -6,6 +6,7 @@ import Home from './views/home/home'
 import About from './views/about/about'
 import Contact from './views/contact/contact'
 import Portfolio from './views/portfolio/portfolio'
+import Footer from "./components/footer/footer.tsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                       <Route path="/contact" element={<Contact />} />
                       <Route path="/portfolio" element={<Portfolio />} />
                   </Routes>
+                  <Footer />
               </div>
           </Router>
       </div>
