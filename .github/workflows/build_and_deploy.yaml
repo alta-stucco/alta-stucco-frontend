@@ -1,8 +1,6 @@
 name: Build_and_deploy app
 on:
-  pull_request:
-    types:
-      - closed
+  push:
     branches:
       - main
 jobs:
