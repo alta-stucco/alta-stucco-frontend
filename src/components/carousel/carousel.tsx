@@ -12,7 +12,7 @@ const ControlledCarousel = () => {
         <div className="carousel-container">
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
-                    <img alt="first slide"/>
+                    <img src="src/assets/react.svg" alt="first slide"/>
                     <Carousel.Caption>
                         <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
