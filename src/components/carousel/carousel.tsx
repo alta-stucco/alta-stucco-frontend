@@ -9,8 +9,11 @@ const ControlledCarousel = () => {
     };
 
     return (
+        <>
+
+
         <div className="carousel-container">
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel  data-bs-theme="dark" activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img src="src/assets/react.svg" alt="first slide"/>
                     <Carousel.Caption>
@@ -36,7 +39,7 @@ const ControlledCarousel = () => {
                 </Carousel.Item>
             </Carousel>
         </div>
-
+        </>
     )
 
 }

@@ -7,5 +7,11 @@
 
 .main-content {
   margin-top: 10vh; /* Adjust based on the height of the navigation bar */
-  padding: 30px;
+  padding: 10px;
+}
+/* make it mobile friendly */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
 }
