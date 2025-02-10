@@ -1,0 +1,13 @@
+.carousel-container img {
+    width: 800px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+}
+
+/* Media query for phones */
+@media (max-width: 600px) {
+    .carousel-container img {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain the aspect ratio */
+    }
+}

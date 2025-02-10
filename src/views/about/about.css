@@ -1,0 +1,6 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between cards as needed */
+    align-items: center; /* Center the cards vertically */
+}
