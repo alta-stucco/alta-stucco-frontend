@@ -1,33 +1,33 @@
-name: Build_and_deploy app
+name: Deploy to Render
+
 on:
   pull_request:
     types:
       - closed
     branches:
-      - main
-jobs:
+      - main  # Trigger on pushes to main. Adjust if using a different branch.
 
-  build:
+jobs:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'  # Specify the Node.js version
-
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
 
-      - name: Build React app
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          publish_dir: ./dist
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build project
+        run: |
+          npm run build
+      - name: Deploy to Render
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        run: |
+          curl -X POST \
+          -H "Authorization: Bearer $RENDER_API_KEY" \
+          -H "Content-Type: application/json" \
+          -d '{}' \
+          https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys

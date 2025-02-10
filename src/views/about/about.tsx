@@ -12,7 +12,11 @@ const About = () => {
     <div>
       <h1>About</h1>
         <div className="card-container">
-        {cardData.map((card) => (<CardComponent key={card.id} title={card.title} text={card.text} />))}
+            {
+                cardData.map((card) => (
+                    <CardComponent key={card.id} title={card.title} text={card.text} />
+                ))
+            }
         </div>
     </div>
   )
