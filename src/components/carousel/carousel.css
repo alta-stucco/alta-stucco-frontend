@@ -1,7 +1,13 @@
-.carousel-container img {
-    width: 800px; /* Set the desired width */
-    height: 400px; /* Set the desired height */
-    object-fit: cover; /* Ensure the image covers the specified dimensions */
+.carousel-container {
+    width: 100%;
+    max-width: 900px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Adjust the max-height as needed */
+    object-fit: cover;
 }
 
 /* Media query for phones */

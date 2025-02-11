@@ -1,4 +1,3 @@
-/* src/views/portfolio/portfolio.css */
 .portfolio-container {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@
     border: 1px solid #ccc;
     text-align: center;
 }
-
 
 .portfolio-container {
     padding: 20px; /* Adjust the padding value as needed */
