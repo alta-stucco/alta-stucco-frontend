@@ -19,15 +19,15 @@ const carouselData  = [
     }
 ]
 
-
 const Portfolio = () => {
-        return (
-            <div className="portfolio-component">
-                <h1>Portfolio</h1>
-                <div className="portfolio-container">
-
-                </div>
+    return (
+        <div className="portfolio-component">
+            <h1>Portfolio</h1>
+            <div className="portfolio-container">
+                <ControlledCarousel items={carouselData} />
             </div>
+        </div>
     )
 }
-export default Portfolio
+
+export default Portfolio;
