@@ -1,7 +1,13 @@
 const Home = () => {
     return (
         <div className="home-container">
-        <h1>Home</h1>
+        <h1>Alta Stucco</h1>
+        <div>
+            <p>Is your stucco chipping or falling off? Do you have leaky gutters or windows? Is your stucco bulging? Is your chimney cracked and looking like a spider web? Does your stucco look shiny or glittering?
+
+Let us help restore your home or office exterior! Contact us for a free consultation!
+</p>
+        </div>
         </div>
     );
 }

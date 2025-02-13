@@ -5,8 +5,8 @@ import Navigation from './components/navigation/navigation'
 import Home from './views/home/home'
 import About from './views/about/about'
 import Contact from './views/contact/contact'
-import Portfolio from './views/portfolio/portfolio'
 import Footer from "./components/footer/footer.tsx";
+import Faq from './views/faq/faq.tsx'
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
                       <Route path="/" element={<Home />} />
                       <Route path="/about" element={<About />} />
                       <Route path="/contact" element={<Contact />} />
-                      <Route path="/portfolio" element={<Portfolio />} />
+                      <Route path="/faq" element={<Faq />} />
                   </Routes>
                   <Footer />
               </div>
