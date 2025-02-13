@@ -4,7 +4,7 @@ interface CardComponentProps {
   title: string;
 }
 
-const CardComponent = ({ title, text }: CardComponentProps) => {
+const CardComponent = ({ title }: CardComponentProps) => {
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src="holder.js/100px180" />
