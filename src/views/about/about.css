@@ -19,8 +19,8 @@
 .aboutLeft {
     flex: 0 0 50%; /* Adjust the width of the left column */
     padding: 20px; /* Example styling */
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .aboutRight {
@@ -29,5 +29,15 @@
     justify-content: center;
     align-items: center;
     background-color: blue;
+}
 
+
+/*.vertical-list {*/
+/*    list-style-type: none; !* Remove default list styling *!*/
+/*    padding: 0;*/
+/*}*/
+
+.vertical-list li {
+    margin-bottom: 10px;
+    display: block;/* Add space between list items */
 }
