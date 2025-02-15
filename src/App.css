@@ -1,5 +1,8 @@
 /* App.css */
+/*body {*/
+/*  color: #7498bd;*/
 
+/*}*/
 .app-container {
   display: flex;
   flex-direction: column;
