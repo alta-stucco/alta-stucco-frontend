@@ -7,12 +7,17 @@ import About from './views/about/about'
 import Contact from './views/contact/contact'
 import Footer from "./components/footer/footer.tsx";
 import Faq from './views/faq/faq.tsx'
+import {Helmet} from "react-helmet";
 
 function App() {
 
 
   return (
       <div className="app-container">
+          <Helmet>
+                <title>Alta Stucco</title>
+                <meta name="description" content="Alta Stucco is a family-owned business dedicated to restoring and transforming residential and commercial exteriors into stunning and durable spaces. Contact us for a free consultation and estimate" />
+          </Helmet>
           <Router>
               <Navigation />
               <div className="main-content">
