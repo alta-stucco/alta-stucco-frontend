@@ -1,3 +1,5 @@
+import { Accordion } from "react-bootstrap";
+
 export default function Faq () {
 
     const questions = [
@@ -46,18 +48,14 @@ export default function Faq () {
 
     return (
         <div>
-            <h1>FAQ</h1>
-            <h4>About Alta Stucco</h4>
-            {
-                questions.map((question: { question: string; answer: string }, index: number) => {
-                    return (
-                        <div key={index}>
-                            <h5>{question.question}</h5>
-                            <p>{question.answer}</p>
-                        </div>
-                    )
-                })
-            }
+            <Accordion>
+                {questions.map((faq, index) => (
+                    <Accordion.Item eventKey={index.toString()} key={index}>
+                        <Accordion.Header>{faq.question}</Accordion.Header>
+                        <Accordion.Body>{faq.answer}</Accordion.Body>
+                    </Accordion.Item>
+                ))}
+            </Accordion>
 
         </div>
     )

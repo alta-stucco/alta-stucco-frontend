@@ -1,0 +1,12 @@
+/* AccordionCustom.css */
+.accordion-button::after {
+    content: '\f067'; /* Unicode for the FontAwesome plus icon */
+    font-family: 'FontAwesome';
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '\f068'; /* Unicode for the FontAwesome minus icon */
+    transform: rotate(0deg);
+}
