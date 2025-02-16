@@ -5,16 +5,15 @@
     align-items: center; /* Center the cards vertically */
 }
 
-
 .about {
-    display: inline-flex;
+    display: flex;
     width: 100vw;
 }
 
 .about-left, .about-right {
     box-sizing: border-box; /* Include padding in the element's total width and height */
     padding: 20px;
-  }
+}
 
 .aboutLeft {
     flex: 0 0 50%; /* Adjust the width of the left column */
@@ -31,13 +30,12 @@
     background-color: blue;
 }
 
-
-/*.vertical-list {*/
-/*    list-style-type: none; !* Remove default list styling *!*/
-/*    padding: 0;*/
-/*}*/
+.vertical-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
 
 .vertical-list li {
-    margin-bottom: 10px;
-    display: block;/* Add space between list items */
+    margin-bottom: 10px; /* Add space between list items */
+    display: block; /* Ensure each list item is displayed as a block element */
 }

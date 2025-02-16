@@ -1,4 +1,5 @@
 import CardComponent from "../../components/card/card.tsx";
+import { Helmet } from "react-helmet";
 import "./about.css";
 
 const cardData = [
@@ -12,6 +13,10 @@ const About = () => {
   return (
     <div className="about">
       <div className="aboutLeft">
+        <Helmet>
+            <title>About Us - Alta Stucco</title>
+            <meta name="description" content="Learn more about Alta Stucco, our mission, services, and values. Contact us for a free consultation and estimate." />
+        </Helmet>
         <h3>About Us</h3>
         <p>Since 2007, Alta Stucco has been dedicated to restoring and transforming residential and commercial exteriors into stunning and durable spaces. With over 30 years of experience, we specialize in repairs and improvements that elevate curb appeal and ensure lasting durability. Our skilled team is committed to delivering top-quality craftsmanship and personalized service, whether it’s fixing wear and tear or transforming your outdoor spaces.</p>
           <br />
