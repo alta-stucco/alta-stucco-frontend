@@ -6,6 +6,7 @@ const cardData = [
   {
     id: 1,
     title: "Nate Olsen and Adam Larsen ",
+      imagePath: "src/assets/react.svg",
   },
 ];
 
@@ -52,7 +53,7 @@ const About = () => {
       <div className="aboutRight">
         <div className="card-container">
           {cardData.map((card) => (
-            <CardComponent key={card.id} title={card.title} />
+            <CardComponent key={card.id} title={card.title} imagePath={card.imagePath} />
           ))}
         </div>
       </div>
