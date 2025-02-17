@@ -8,6 +8,8 @@ export const navigationLinks = [
   { path: '/contact', label: 'Contact' },
 ]
 
+// TODO: test with cypress
+
 const Navigation = () => {
   return (
     <nav>
