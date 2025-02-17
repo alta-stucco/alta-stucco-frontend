@@ -26,10 +26,10 @@ const About = () => {
             <br />
             <h3>What We Offer</h3>
           <ul className="vertical-list">
-              <li><strong>Residential Services</strong>: From stucco and stone to fascia and soffit, we provide a full range of exterior services tailored to homeowners. Our team understands the unique needs of residential properties and works diligently to ensure every project meets our high standards of quality and craftsmanship.</li>
-              <li><strong>Commercial Services</strong>: We know that your business’s exterior is crucial to attracting customers and maintaining a professional image. Our commercial services include façade renovations, exterior painting, and maintenance solutions designed to enhance your building’s appeal while adhering to industry standards.</li>
-              <li><strong>Custom Solutions</strong>: Every property is unique, and so are your needs. We offer personalized consultations to discuss your vision and create a customized plan that fits your budget and style. Whether it’s a modern aesthetic or a classic look, we have the expertise to deliver results that exceed your expectations.</li>
-              <li><strong>Partnerships</strong>: If your exterior needs out grow our own expertise, we will collaborate with a network of trusted partners including roofers, window specialists, deck or patio designers, framers, steel work experts, and more.</li>
+              <li><strong>Residential Services</strong>: <p>From stucco and stone to fascia and soffit, we provide a full range of exterior services tailored to homeowners. Our team understands the unique needs of residential properties and works diligently to ensure every project meets our high standards of quality and craftsmanship.</p></li>
+              <li><strong>Commercial Services</strong>: <p>We know that your business’s exterior is crucial to attracting customers and maintaining a professional image. Our commercial services include façade renovations, exterior painting, and maintenance solutions designed to enhance your building’s appeal while adhering to industry standards.</p></li>
+              <li><strong>Custom Solutions</strong>: <p>Every property is unique, and so are your needs. We offer personalized consultations to discuss your vision and create a customized plan that fits your budget and style. Whether it’s a modern aesthetic or a classic look, we have the expertise to deliver results that exceed your expectations.</p></li>
+              <li><strong>Partnerships</strong>: <p>If your exterior needs out grow our own expertise, we will collaborate with a network of trusted partners including roofers, window specialists, deck or patio designers, framers, steel work experts, and more.</p></li>
           </ul>
             <br />
             <h3>Our Values</h3>

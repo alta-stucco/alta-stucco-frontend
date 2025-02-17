@@ -6,8 +6,10 @@
 }
 
 .about {
+    padding: 1%;
     display: flex;
     width: 100vw;
+    /*height: 100vh;*/
 }
 
 .about-left, .about-right {
@@ -27,7 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
 }
 
 .vertical-list {

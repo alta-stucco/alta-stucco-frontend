@@ -1,6 +1,7 @@
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Navigation from "../navigation/navigation";
+import { Link } from "react-router-dom";
+import {navigationLinks} from "../navigation/navigation.tsx";
 import "./footer.css";
 
 const Footer = () => {
@@ -28,7 +29,15 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-right">
-          <Navigation />
+          <nav>
+            <ul>
+              {navigationLinks.map((link, index) => (
+                  <li key={index}>
+                    <Link to={link.path}>{link.label}</Link>
+                  </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
