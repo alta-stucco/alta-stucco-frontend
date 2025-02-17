@@ -1,5 +1,5 @@
 import { Accordion } from "react-bootstrap";
-
+import AccordionExpander from "../../components/accordian/AccordionExpander.tsx";
 export default function Faq () {
 
     const questions = [
@@ -50,10 +50,8 @@ export default function Faq () {
         <div>
             <Accordion>
                 {questions.map((faq, index) => (
-                    <Accordion.Item eventKey={index.toString()} key={index}>
-                        <Accordion.Header>{faq.question}</Accordion.Header>
-                        <Accordion.Body>{faq.answer}</Accordion.Body>
-                    </Accordion.Item>
+                    <AccordionExpander key={index} question={faq.question} answer={faq.answer} />
+
                 ))}
             </Accordion>
 
