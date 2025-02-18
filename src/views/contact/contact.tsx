@@ -1,10 +1,10 @@
-import EmbeddedLink from "../../components/embeddedLink/embeddedLink.tsx";
+import EmbeddedForm from "../../components/embeddedLink/embeddedLink.tsx";
 
 const Contact = () => {
 
     return (
         <>
-            <EmbeddedLink />
+            <EmbeddedForm />
         </>
     )
 }
