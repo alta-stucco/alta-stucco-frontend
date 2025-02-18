@@ -6,7 +6,8 @@ const cardData = [
   {
     id: 1,
     title: "Nate Olsen and Adam Larsen ",
-      imagePath: "src/assets/react.svg",
+    imagePath: "https://via.placeholder.com/150",
+      // imagePath: "src/assets/react.svg",
   },
 ];
 
