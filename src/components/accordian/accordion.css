@@ -4,26 +4,6 @@
     padding-left: 4%;
     padding-right: 4%
 }
-/*}*/
-/*.accordion-button::after {*/
-/*    !*content: '\f067'; !* Unicode for the FontAwesome plus icon *!*!*/
-/*    !*font-family: 'Font Awesome 6 Free', serif; !* Ensure the correct font family is used *!*!*/
-/*    font-weight: 900; !* FontAwesome uses font-weight 900 for solid icons *!*/
-/*    transform: rotate(0deg);*/
-/*    transition: transform 0.2s;*/
-/*}*/
-
-/*.accordion-button:not(.collapsed)::after {*/
-/*    content: '\f068'; !* Unicode for the FontAwesome minus icon *!*/
-/*    transform: rotate(0deg);*/
-/*}*/
-
-/* Hide the default up and down arrows */
-.accordion-button::before {
-    background-color: transparent;
-
-    display: none;
-}
 
 
 /* color of the accordion header and body */

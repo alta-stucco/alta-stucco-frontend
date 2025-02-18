@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "./navigation.css";
 
-export const navigationLinks = [
-  { path: '/', label: 'Home' },
-  { path: '/about', label: 'About' },
-  { path: '/faq', label: 'FAQ' },
-  { path: '/contact', label: 'Contact' },
-]
+// export const navigationLinks = [
+//   { path: '/', label: 'Home' },
+//   { path: '/about', label: 'About' },
+//   { path: '/faq', label: 'FAQ' },
+//   { path: '/contact', label: 'Contact' },
+// ]
 
 // TODO: test with cypress
 
@@ -19,11 +19,23 @@ const Navigation = () => {
         </Link>
       </div>
       <ul>
-        {navigationLinks.map((link, index) => (
-            <li key={index}>
-              <Link to={link.path}>{link.label}</Link>
-            </li>
-        ))}
+          <li>
+              <Link to="/">Home</Link>
+          </li>
+          <li>
+              <Link to="/about">About</Link>
+          </li>
+          <li>
+              <Link to="/faq">FAQs</Link>
+          </li>
+          <li>
+              <Link to="/contact">Contact</Link>
+          </li>
+        {/*{navigationLinks.map((link, index) => (*/}
+        {/*    <li key={index}>*/}
+        {/*      <Link to={link.path}>{link.label}</Link>*/}
+        {/*    </li>*/}
+        {/*))}*/}
       </ul>
     </nav>
   );
