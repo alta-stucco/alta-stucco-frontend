@@ -4,21 +4,34 @@ const EmbeddedForm = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        const script = document.querySelector(`script[src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"]`);
-        if (script) {
-            setIsLoaded(true);
-        } else {
-            const newScript = document.createElement('script');
-            newScript.src = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
-            newScript.setAttribute('clienthub_id', '462531c7-515f-4464-aabb-fe0dac55ed54');
-            newScript.setAttribute('form_url', 'https://clienthub.getjobber.com/client_hubs/462531c7-515f-4464-aabb-fe0dac55ed54/public/work_request/embedded_work_request_form');
-            newScript.onload = () => setIsLoaded(true);
-            document.body.appendChild(newScript);
-        }
-    }, []);
+        const checkScriptLoaded = () => {
+            const script = document.querySelector(`script[src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"]`);
+            if (script) {
+                setIsLoaded(true);
+            } else {
+                const newScript = document.createElement('script');
+                newScript.src = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
+                newScript.setAttribute('clienthub_id', '462531c7-515f-4464-aabb-fe0dac55ed54');
+                newScript.setAttribute('form_url', 'https://clienthub.getjobber.com/client_hubs/462531c7-515f-4464-aabb-fe0dac55ed54/public/work_request/embedded_work_request_form');
+                newScript.onload = () => setIsLoaded(true);
+                document.body.appendChild(newScript);
+            }
+        };
+
+        checkScriptLoaded();
+
+        // Force a reload if the script is not loaded after a certain time
+        const timeoutId = setTimeout(() => {
+            if (!isLoaded) {
+                checkScriptLoaded();
+            }
+        }, 5000); // 5 seconds
+
+        return () => clearTimeout(timeoutId);
+    }, [isLoaded]);
 
     if (!isLoaded) {
-        return  (
+        return (
             <div>Loading...</div>
         );
     }
