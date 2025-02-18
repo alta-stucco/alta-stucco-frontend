@@ -1,5 +1,5 @@
 import './portfolio.css';
-import ControlledCarousel from "../../components/carousel/carousel.tsx";
+import ControlledCarousel from "../../../components/future/carousel/carousel.tsx";
 
 const carouselData  = [
     {

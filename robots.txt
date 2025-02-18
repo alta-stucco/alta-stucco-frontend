@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /private/
+Sitemap: https://alta-stucco-frontend.onrender.com/sitemap.xml

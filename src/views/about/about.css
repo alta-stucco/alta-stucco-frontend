@@ -4,3 +4,39 @@
     gap: 20px; /* Adjust the gap between cards as needed */
     align-items: center; /* Center the cards vertically */
 }
+
+.about {
+    padding: 1%;
+    display: flex;
+    width: 100vw;
+    /*height: 100vh;*/
+}
+
+.about-left, .about-right {
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    padding: 20px;
+}
+
+.aboutLeft {
+    flex: 0 0 50%; /* Adjust the width of the left column */
+    padding: 20px; /* Example styling */
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.aboutRight {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.vertical-list li {
+    margin-bottom: 10px; /* Add space between list items */
+    display: block; /* Ensure each list item is displayed as a block element */
+}
