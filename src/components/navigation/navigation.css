@@ -69,6 +69,6 @@ img {
 
     /* Add padding to the top of the main content to account for the fixed nav */
     .main-content {
-        padding-top: 100%; /* Adjust based on the height of the nav */
+        padding-top: 40%; /* Adjust based on the height of the nav */
     }
 }

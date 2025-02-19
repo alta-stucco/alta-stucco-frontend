@@ -13,8 +13,8 @@ const cardData = [
 
 const About = () => {
   return (
-    <div className="about">
-      <div>
+    <div>
+      <div className="about">
         <div className="aboutLeft">
           <Helmet>
             <title>About Us - Alta Stucco</title>
