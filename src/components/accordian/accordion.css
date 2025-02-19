@@ -4,10 +4,6 @@
     padding-right: 4%
 }
 
-
-
-
-
 .accordion-button:not(.collapsed) {
     background-color: #000000; /* Even lighter grey when expanded */
     color: #ffffff;
