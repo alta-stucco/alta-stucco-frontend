@@ -15,7 +15,7 @@ const Navigation = () => {
     <nav>
       <div className="logo">
         <Link to="/">
-          <img src="https://via.placeholder.com/150" alt="Alta Stucco" />
+          <img src="src/assets/main_logo.png" alt="Alta Stucco" />
         </Link>
       </div>
       <ul>
