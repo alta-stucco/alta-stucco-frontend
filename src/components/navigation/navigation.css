@@ -12,6 +12,7 @@ nav {
     justify-content: space-between; /* Space between logo and links */
     align-items: center;
     padding: 10px 20px;
+    z-index: 1000; /* Ensure the nav is above other content */
 }
 
 img {
@@ -23,6 +24,8 @@ img {
 .navbar {
     display: flex;
     list-style: none;
+    justify-content: center; /* Center the navbar items */
+    flex-grow: 1; /* Allow the navbar to grow and take available space */
 }
 
 .navbar li {
@@ -62,5 +65,10 @@ img {
     .navbar a {
         padding: 15px;
         width: 100%;
+    }
+
+    /* Add padding to the top of the main content to account for the fixed nav */
+    .main-content {
+        padding-top: 100%; /* Adjust based on the height of the nav */
     }
 }
