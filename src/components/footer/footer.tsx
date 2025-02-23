@@ -1,6 +1,5 @@
 import { faFacebook, faLinkedin, faInstagram, faUpwork } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Navigation from "../navigation/navigation.tsx";
 import "./footer.css";
 
 const Footer = () => {
@@ -24,16 +23,11 @@ const Footer = () => {
           </span>
           <p>© {year} Alta Stucco, all rights reserved</p>
             <div className="social-icons">
-              <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} style={{ color: "black" }} /></a>
-              <a href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} style={{ color: "black" }} /></a>
-              <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} style={{ color: "black" }} /></a>
-              <a href="https://instagram.com"><FontAwesomeIcon icon={faUpwork} style={{ color: "black" }} /></a>
+              <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff" }} /></a>
+
 
             </div>
 
-        </div>
-        <div className="footer-right">
-          <Navigation />
         </div>
       </div>
     </footer>
