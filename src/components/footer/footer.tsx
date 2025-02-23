@@ -18,9 +18,9 @@ const Footer = () => {
           </span>
           <br />
           <span className="phone">
-            <a href="tel:801-815-4612" className="phone-link">
+
               (801) 815-4612
-            </a>
+
           </span>
           <p>© {year} Alta Stucco, all rights reserved</p>
             <div className="social-icons">
