@@ -1,4 +1,4 @@
-import { faFacebook, faLinkedin, faInstagram, faUpwork } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.css";
 
@@ -17,15 +17,11 @@ const Footer = () => {
           </span>
           <br />
           <span className="phone">
-
               (801) 815-4612
-
           </span>
           <p>© {year} Alta Stucco, all rights reserved</p>
             <div className="social-icons">
-              <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff" }} /></a>
-
-
+              <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} style={{ color: "#7498bd" }} /></a>
             </div>
 
         </div>
