@@ -21,7 +21,7 @@ const Footer = () => {
           </span>
           <p>© {year} Alta Stucco, all rights reserved</p>
             <div className="social-icons">
-              <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} style={{ color: "#7498bd" }} /></a>
+              <a href="https://facebook.com/altastucco"><FontAwesomeIcon icon={faFacebook} style={{ color: "#7498bd" }} /></a>
             </div>
 
         </div>
