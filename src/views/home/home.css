@@ -7,3 +7,39 @@
     font: inherit !important;
     cursor: pointer !important;
 }
+
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.portfolio-col {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.portfolio-container {
+    padding: 20px; /* Adjust the padding value as needed */
+}
+
+/* Media query for phones */
+@media (max-width: 600px) {
+    .portfolio-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+/* src/views/home/home.css */

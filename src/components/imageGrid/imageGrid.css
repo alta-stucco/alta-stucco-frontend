@@ -1,0 +1,13 @@
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between images */
+    padding: 20px; /* Adjust the padding around the grid */
+}
+
+.image-grid img {
+    flex: 1 1 auto;
+    max-width: calc(33.33% - 20px); /* Adjust the width of the images */
+    height: auto;
+    object-fit: cover;
+}

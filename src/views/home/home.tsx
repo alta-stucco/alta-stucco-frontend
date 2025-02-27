@@ -1,8 +1,9 @@
 import {Link} from "react-router-dom";
 import "./home.css";
 
-const Home = () => {
+import ImageGrid from "../../components/imageGrid/imageGrid.tsx";
 
+const Home = () => {
 
     return (
         <div className="home-container">
@@ -11,6 +12,11 @@ const Home = () => {
 
                     Let us help restore your home or office exterior! <Link className="contact-home" to="/contact">Contact us</Link> for a free consultation!
                 </p>
+            </div>
+            <div className="portfolio-component">
+                <div className="portfolio-container">
+                <ImageGrid />
+                </div>
             </div>
         </div>
     );
