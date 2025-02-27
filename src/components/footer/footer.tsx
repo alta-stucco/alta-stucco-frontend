@@ -16,14 +16,13 @@ const Footer = () => {
             South Salt Lake, UT 84115
           </span>
           <br />
-          <span className="phone">
-              (801) 815-4612
-          </span>
+          <span className="phone">(801) 815-4612</span>
           <p>© {year} Alta Stucco, all rights reserved</p>
-            <div className="social-icons">
-              <a href="https://facebook.com/altastucco"><FontAwesomeIcon icon={faFacebook} style={{ color: "#7498bd" }} /></a>
-            </div>
-
+          <div className="social-icons">
+            <a href="https://facebook.com/altastucco">
+              <FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff" }} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
