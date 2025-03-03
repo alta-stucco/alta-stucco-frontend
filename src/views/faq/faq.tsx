@@ -2,11 +2,10 @@ import { Accordion } from "react-bootstrap";
 import AccordionExpander from "../../components/accordian/AccordionExpander.tsx";
 export default function Faq () {
 
-    const questions = [
+    const altaStuccoQuestions = [
         {
             question: "How long have you been in business?",
-            answer: "How long have you been in business? \n" +
-                "We started Alta Stucco in 2007 in the middle of the US financial crisis. We saw a need for affordable, durable stucco repair in our community and got to work. With over 30 years of experience, we are third generation stucco and remodeling experts, we deliver exceptional results and a seamless experience for every client."
+            answer: "We started Alta Stucco in 2007 in the middle of the US financial crisis. We saw a need for affordable, durable stucco repair in our community and got to work. With over 30 years of experience, we are third generation stucco and remodeling experts, we deliver exceptional results and a seamless experience for every client."
         },
         {
             question: "Do you have a physical location?",
@@ -15,7 +14,10 @@ export default function Faq () {
         {
             question: "Will you come to my home or office for a consultation?",
             answer: "Yes, from Logan to St. George, and sometimes as far as Idaho or Wyoming, we are willing to travel and meet with you to review your needs. Book your consultation today!"
-        },
+        }
+
+    ]
+    const stuccoQuestions = [
         {
             question: "Do you patch cracks in stucco?",
             answer: "Yes, we specialize in repairing and restoring in your existing stucco. We will review options with you to repair cracks or evaluate the need for replacing your stucco."
@@ -45,11 +47,20 @@ export default function Faq () {
             answer: "Yes, we can stucco over cinder block or brick. This is a common procedure to prevent unnecessary labor costs for removal."
         }
     ]
-
     return (
         <div>
+            <h1>
+                About Alta Stucco
+            </h1>
             <Accordion>
-                {questions.map((faq, index) => (
+                {altaStuccoQuestions.map((faq, index) => (
+                    <AccordionExpander key={index} question={faq.question} answer={faq.answer} />
+
+                ))}
+            </Accordion>
+            <h1>About Stucco</h1>
+            <Accordion>
+                {stuccoQuestions.map((faq, index) => (
                     <AccordionExpander key={index} question={faq.question} answer={faq.answer} />
 
                 ))}

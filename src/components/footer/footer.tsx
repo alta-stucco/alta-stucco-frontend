@@ -19,7 +19,7 @@ const Footer = () => {
           <span className="phone">(801) 815-4612</span>
           <p>© {year} Alta Stucco, all rights reserved</p>
           <div className="social-icons">
-            <a href="https://facebook.com/altastucco">
+            <a href="https://facebook.com/altastucco" target="_blank">
               <FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff" }} />
             </a>
           </div>
