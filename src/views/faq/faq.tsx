@@ -9,11 +9,11 @@ export default function Faq () {
         },
         {
             question: "Do you have a physical location?",
-            answer: "Yes, with the purchase of our first commercial property in 2024, we are now located at 180 W 3030 S, South Salt Lake. Our office hours vary so please contact us to set up a meeting."
+            answer: "Yes, with the purchase of our first commercial property in 2024, we are now located at 180 W 3030 S, South Salt Lake. Our office hours vary so please <a href='/contact'>contact us</a> to set up a meeting."
         },
         {
             question: "Will you come to my home or office for a consultation?",
-            answer: "Yes, from Logan to St. George, and sometimes as far as Idaho or Wyoming, we are willing to travel and meet with you to review your needs. Book your consultation today!"
+            answer: "Yes, from Logan to St. George, and sometimes as far as Idaho or Wyoming, we are willing to travel and meet with you to review your needs. <a href='/contact'>Book your consultation today</a>!"
         }
 
     ]

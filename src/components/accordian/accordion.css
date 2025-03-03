@@ -12,3 +12,7 @@
 .accordion-body {
     color: #000000;
 }
+.accordion-body a {
+    color: #000000;
+    text-decoration: none;
+}
