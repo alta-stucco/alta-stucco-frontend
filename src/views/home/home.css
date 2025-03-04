@@ -8,12 +8,10 @@
     cursor: pointer !important;
 }
 
-
 .portfolio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*padding: 20px;*/
 }
 
 .portfolio-row {
@@ -30,14 +28,28 @@
     text-align: center;
 }
 
-
 /* Media query for phones */
 @media (max-width: 600px) {
     .portfolio-container {
         padding: 10px; /* Adjust padding for smaller screens */
     }
+
+    .portfolio-row {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .portfolio-col {
+        width: 100%; /* Make columns take full width */
+        margin: 5px 0; /* Adjust margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .home-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .home-container p {
+        font-size: 1em; /* Adjust font size for readability */
+    }
 }
-
-
-
-/* src/views/home/home.css */

@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 20px; /* Adjust the gap between items */
-    /*padding: 20px; !* Adjust the padding around the grid *!*/
     align-items: stretch;
 }
 
@@ -11,7 +10,6 @@
     max-width: calc(33.33% - 20px); /* Adjust the width of the images */
     height: auto;
     object-fit: cover;
-
 }
 
 .image-grid h1 {
@@ -25,4 +23,20 @@
     font-size: 36px;
     font-weight: bold;
     font-style: normal;
+}
+
+/* Media query for phones */
+@media (max-width: 600px) {
+    .image-grid {
+        flex-direction: column; /* Stack images vertically */
+        gap: 10px; /* Adjust the gap between items for smaller screens */
+    }
+
+    .image-grid img {
+        max-width: 100%; /* Make images take full width */
+    }
+
+    .mission {
+        font-size: 24px; /* Adjust font size for readability on smaller screens */
+    }
 }
