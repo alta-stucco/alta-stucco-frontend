@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 20px; /* Adjust the gap between items */
-    padding: 20px; /* Adjust the padding around the grid */
+    /*padding: 20px; !* Adjust the padding around the grid *!*/
     align-items: stretch;
 }
 

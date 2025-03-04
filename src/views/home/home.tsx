@@ -15,23 +15,23 @@ const Home = () => {
         },
         {
             title: "Stone, Brick & Rock",
-            text: null,
+            text: "Add character or repair your existing stone to withstand Utah’s harsh weather conditions.",
         },
         {
             title: "Fascia, Soffit & Gutters",
-            text: null,
+            text: "Protect your roof and prevent moisture build up with expertly installed, high quality fascia and soffit.",
         },
         {
-            title: "Hardie Siding\n",
-            text: "Durable, stylish and weather-resistant ",
+            title: "Hardie Board",
+            text: "Durable, stylish and weather-resistant fiber cement board provides a beautiful finish that enhances your exterior.",
+        },
+        {
+            title: "Painting",
+            text: "Refresh your home or business with a new coat of paint. We utilize top-quality materials to ensure a stunning, long-lasting finish."
         },
         {
             title: "Partnerships",
             text: "We work with a trusted network of specialists including; window companies, roofers, deck and patio designers, steel work experts and more.",
-        },
-        {
-            title: "Custom Design",
-            text: null,
         },
 
     ]
