@@ -1,8 +1,9 @@
 .image-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust the gap between images */
+    flex-wrap: nowrap;
+    gap: 20px; /* Adjust the gap between items */
     padding: 20px; /* Adjust the padding around the grid */
+    align-items: stretch;
 }
 
 .image-grid img {
@@ -10,4 +11,9 @@
     max-width: calc(33.33% - 20px); /* Adjust the width of the images */
     height: auto;
     object-fit: cover;
+}
+
+.image-grid h1 {
+    flex: 1 1 auto;
+    margin: 0;
 }

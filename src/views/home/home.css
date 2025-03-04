@@ -29,9 +29,6 @@
     text-align: center;
 }
 
-.portfolio-container {
-    padding: 20px; /* Adjust the padding value as needed */
-}
 
 /* Media query for phones */
 @media (max-width: 600px) {
