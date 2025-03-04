@@ -10,17 +10,21 @@ interface CardTextProps {
 export default function CardHomeText({title, text}:CardTextProps) {
 
   return (
-    <Card>
-        <CardBody>
+      <div className="card-text-container">
 
-        <Card.Title>{title}</Card.Title>
-            <Card.Text>
-                {text}
-            </Card.Text>
+        <Card>
+            <CardBody>
 
-        </CardBody>
+            <Card.Title>{title}</Card.Title>
+                <Card.Text>
+                    {text}
+                </Card.Text>
+
+            </CardBody>
 
 
-    </Card>
-  );
-}
+        </Card>
+        </div>
+      );
+    }
+
