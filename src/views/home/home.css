@@ -28,6 +28,24 @@
     text-align: center;
 }
 
+
+
+.card-text-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items */
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Media query for phones */
+@media (max-width: 600px) {
+    .card-text-row {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 10px; /* Adjust the gap between items for smaller screens */
+    }
+}
+
 /* Media query for phones */
 @media (max-width: 600px) {
     .portfolio-container {

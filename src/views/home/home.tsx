@@ -51,7 +51,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="card-text-row" >
                     {cardHomeData.map((card, index) => (
                         <CardHomeText key={index} title={card.title} text={card.text} />
                     ))}
