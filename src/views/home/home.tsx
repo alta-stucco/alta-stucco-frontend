@@ -3,8 +3,38 @@ import "./home.css";
 
 import ImageGrid from "../../components/imageGrid/imageGrid.tsx";
 
+import CardHomeText from "../../components/card_text/card_text.tsx";
+
 const Home = () => {
 
+
+    const cardHomeData = [
+        {
+            title: "Stucco",
+            text: "Is your stucco cracking, chipped, bulging or shiny? Allow us to revitalize your stucco and ensure its longevity!",
+        },
+        {
+            title: "Stone, Brick & Rock",
+            text: null,
+        },
+        {
+            title: "Fascia, Soffit & Gutters",
+            text: null,
+        },
+        {
+            title: "Hardie Siding\n",
+            text: "Durable, stylish and weather-resistant ",
+        },
+        {
+            title: "Partnerships",
+            text: "We work with a trusted network of specialists including; window companies, roofers, deck and patio designers, steel work experts and more.",
+        },
+        {
+            title: "Custom Design",
+            text: null,
+        },
+
+    ]
     return (
        <>
 
@@ -19,6 +49,12 @@ const Home = () => {
                     <div className="portfolio-container">
                     <ImageGrid />
                     </div>
+                </div>
+
+                <div>
+                    {cardHomeData.map((card, index) => (
+                        <CardHomeText key={index} title={card.title} text={card.text} />
+                    ))}
                 </div>
             </div>
        </>

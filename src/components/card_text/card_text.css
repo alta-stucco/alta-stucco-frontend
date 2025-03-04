@@ -1,0 +1,8 @@
+.card-text-container {
+    flex: 1 1 auto; /* Ensure it takes up the same space as the images */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+    text-align: center;
+}
