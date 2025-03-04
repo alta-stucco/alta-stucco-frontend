@@ -1,17 +1,27 @@
+import './textcontainer.css'
+
 export default function TextContainer() {
     return (
-        <h1 className="text-center">
-            Full range of exterior services.
-            <br />
+        <div className="text-center">
+            <p id="fullRange">
+                Full range of exterior services.
+            </p>
+            <p id="partnerships">
+                residential
+                <br/>
+                commercial
+                <br/>
 
-            residential
-            commercial
-            custom design
-            partnerships
-            <br />
+                custom design
+                <br/>
 
-            Schedule your
-            free consultation
-        </h1>
+                partnerships
+            </p>
+            <p id="scheduleConsultation">
+                Schedule your
+                free consultation
+            </p>
+
+        </div>
     )
 }

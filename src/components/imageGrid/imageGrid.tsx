@@ -21,7 +21,10 @@ const ImageGrid = () => {
                 <TextContainer />
             </div>
             <div>
-                some other text
+                <p className="mission">Our mission is to repair and enhance the functionality, beauty and value of your property.</p>
+            </div>
+            <div className="image-grid">
+
             </div>
         </div>
 

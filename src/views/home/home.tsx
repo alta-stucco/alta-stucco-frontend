@@ -6,7 +6,7 @@ import ImageGrid from "../../components/imageGrid/imageGrid.tsx";
 const Home = () => {
 
     return (
-       <div>
+       <>
 
             <div className="home-container">
                 <div>
@@ -21,7 +21,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-       </div>
+       </>
     );
 }
 

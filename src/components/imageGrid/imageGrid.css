@@ -11,9 +11,18 @@
     max-width: calc(33.33% - 20px); /* Adjust the width of the images */
     height: auto;
     object-fit: cover;
+
 }
 
 .image-grid h1 {
     flex: 1 1 auto;
     margin: 0;
+}
+
+.mission {
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
 }
