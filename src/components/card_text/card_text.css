@@ -1,0 +1,31 @@
+.card-text-container {
+    display: flex;
+    flex: 1 1 calc(33.33% - 20px); /* Ensure it takes up one-third of the row */
+    max-width: calc(33.33% - 20px); /* Set a maximum width to ensure wrapping */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+    text-align: center;
+    height: 100%;
+    /*margin: 10px; !* Add margin similar to the images *!*/
+    /*padding: 20px; !* Add padding similar to the images *!*/
+    /*border: 1px solid #ccc; !* Add border similar to the images *!*/
+}
+
+.card-body {
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Ensure text is centered */
+}
+/* Media query for phones */
+@media (max-width: 600px) {
+    .card-text-container {
+        max-width: 100%; /* Make the card take full width */
+        padding: 10px; /* Add padding for smaller screens */
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+}

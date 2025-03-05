@@ -1,7 +1,6 @@
 /* AccordionCustom.css */
 .accordion-class {
-    padding-left: 4%;
-    padding-right: 4%
+
 }
 
 .accordion-button:not(.collapsed) {
@@ -10,5 +9,9 @@
 }
 
 .accordion-body {
-    color: #7498bd;
+    color: #000000;
+}
+.accordion-body a {
+    color: #000000;
+    text-decoration: none;
 }

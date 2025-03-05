@@ -6,7 +6,7 @@
 }
 
 .about {
-    padding: 1%;
+    /*padding: 1%;*/
     display: flex;
     width: 100vw;
     /*height: 100vh;*/
@@ -19,7 +19,7 @@
 
 .aboutLeft {
     flex: 0 0 50%; /* Adjust the width of the left column */
-    padding: 20px; /* Example styling */
+    /*padding: 20px; !* Example styling *!*/
     background-color: #ffffff;
     color: #000000;
 }

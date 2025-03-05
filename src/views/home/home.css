@@ -8,7 +8,6 @@
     cursor: pointer !important;
 }
 
-
 .portfolio-container {
     display: flex;
     flex-direction: column;
@@ -29,8 +28,22 @@
     text-align: center;
 }
 
-.portfolio-container {
-    padding: 20px; /* Adjust the padding value as needed */
+
+
+.card-text-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items */
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Media query for phones */
+@media (max-width: 600px) {
+    .card-text-row {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 10px; /* Adjust the gap between items for smaller screens */
+    }
 }
 
 /* Media query for phones */
@@ -38,8 +51,23 @@
     .portfolio-container {
         padding: 10px; /* Adjust padding for smaller screens */
     }
+
+    .portfolio-row {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .portfolio-col {
+        width: 100%; /* Make columns take full width */
+        margin: 5px 0; /* Adjust margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .home-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .home-container p {
+        font-size: 1em; /* Adjust font size for readability */
+    }
 }
-
-
-
-/* src/views/home/home.css */
