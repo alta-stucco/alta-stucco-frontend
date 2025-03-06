@@ -6,10 +6,10 @@
 }
 
 .about {
-    /*padding: 1%;*/
     display: flex;
-    width: 100vw;
-    /*height: 100vh;*/
+    flex-direction: row; /* Default to row direction */
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .about-left, .about-right {
@@ -19,7 +19,6 @@
 
 .aboutLeft {
     flex: 0 0 50%; /* Adjust the width of the left column */
-    /*padding: 20px; !* Example styling *!*/
     background-color: #ffffff;
     color: #000000;
 }
@@ -39,4 +38,28 @@
 .vertical-list li {
     margin-bottom: 10px; /* Add space between list items */
     display: block; /* Ensure each list item is displayed as a block element */
+}
+
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 0; /* Remove padding to honor the edge of the device */
+    }
+
+    .aboutRight {
+        order: -1; /* Place .aboutRight above .aboutLeft */
+        flex: 0 0 auto; /* Adjust flex properties for mobile view */
+        width: 100%; /* Ensure full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .aboutLeft {
+        flex: 0 0 auto; /* Adjust flex properties for mobile view */
+        width: 100%; /* Ensure full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .card-container {
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
 }
