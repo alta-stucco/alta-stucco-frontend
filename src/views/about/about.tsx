@@ -119,7 +119,7 @@ const About = () => {
           <p id="scheduleConsultation">
             <a href="/contact">Schedule your free consultation</a>
           </p>
-          <div className="card-container">
+          {/* <div className="card-container">
             {cardData.map((card) => (
               <CardComponent
                 key={card.id}
@@ -127,7 +127,7 @@ const About = () => {
                 imagePath={card.imagePath}
               />
             ))}
-          </div>
+          </div> */}
 
           <p>
             <h4>Meet Our Team</h4>
