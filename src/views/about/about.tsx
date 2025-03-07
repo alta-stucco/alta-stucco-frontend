@@ -1,7 +1,12 @@
 // import CardComponent from "../../components/card/card.tsx";
 import { Helmet } from "react-helmet";
 import "./about.css";
+import img3 from "../../assets/stock_images/IMG_2881.png";
+import img4 from "../../assets/stock_images/IMG_2882.png";
 
+import img5 from "../../assets/stock_images/image5.jpeg";
+import img6 from "../../assets/stock_images/image6.jpeg";
+import AboutImageGrid from "../../components/aboutImages/aboutImages";
 // const cardData = [
 //   {
 //     id: 1,
@@ -12,8 +17,31 @@ import "./about.css";
 // ];
 
 const About = () => {
+  const images = [
+    {
+      id: 1,
+      src: img3,
+      alt: "before door",
+    },
+    {
+      id: 2,
+      src: img4,
+      alt: "after door",
+    },
+    {
+      id: 3,
+      src: img5,
+      alt: "befor window",
+    },
+    {
+      id: 4,
+      src: img6,
+      alt: "after window",
+    },
+  ];
   return (
     <div>
+      <br />
       <div className="about">
         <div className="aboutLeft">
           <Helmet>
@@ -146,6 +174,9 @@ const About = () => {
           </h3>
         </div>
       </div>
+      <br />
+      <AboutImageGrid images={images} />
+      <br />
     </div>
   );
 };
