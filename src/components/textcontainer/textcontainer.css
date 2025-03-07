@@ -1,9 +1,10 @@
 .text-center {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    /* align-items: space-between; */
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0 auto;
     max-width: 100%;
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */

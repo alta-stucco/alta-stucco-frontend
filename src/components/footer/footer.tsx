@@ -9,16 +9,22 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
-        <div className="footer-left">
+        <div className="address">
           <span className="address">
             180 W 3030 S
             <br />
-            South Salt Lake, UT 84115
+            South Salt Lake UT 84115
           </span>
-          <br />
-          <a href="mailto:alta_stucco@yahoo.com" className="email-footer">alta_stucco@yahoo.com</a>
+        </div>
+        <div className="contact">
+          <a href="mailto:alta_stucco@yahoo.com" className="email-footer">
+            alta_stucco@yahoo.com
+          </a>
+
           <span className="phone">(801) 815-4612</span>
-          <p>© {year} Alta Stucco, all rights reserved</p>
+        </div>
+        <div className="social">
+          <p>Get Started!</p>
           <div className="social-icons">
             <a href="https://facebook.com/altastucco" target="_blank">
               <FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff" }} />
@@ -26,6 +32,29 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="footer-copyright">
+        © {year} Alta Stucco, all rights reserved
+      </div>
+
+      {/* <div className="footer-left">
+          <span className="address">
+            180 W 3030 S
+            <br />
+            South Salt Lake, UT 84115
+          </span>
+          <br />
+          <a href="mailto:alta_stucco@yahoo.com" className="email-footer">
+            alta_stucco@yahoo.com
+          </a>
+          <span className="phone">(801) 815-4612</span>
+          <div className="social-icons">
+            <a href="https://facebook.com/altastucco" target="_blank">
+              <FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff" }} />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p>© {year} Alta Stucco, all rights reserved</p> */}
     </footer>
   );
 };
