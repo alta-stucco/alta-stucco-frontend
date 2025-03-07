@@ -24,9 +24,10 @@
 }
 
 .aboutRight {
-    flex: 0 0 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 50%;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -38,6 +39,16 @@
 .vertical-list li {
     margin-bottom: 10px; /* Add space between list items */
     display: block; /* Ensure each list item is displayed as a block element */
+}
+.getintouch a{
+    color: #0097b2; /* Ensure the link color matches the text color */
+    font-family: 'Yeseva One', serif;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.getintouch a:hover {
+    font-family: 'Yeseva One', serif;
+    text-decoration: none; /* Add underline on hover */
 }
 
 @media (max-width: 600px) {

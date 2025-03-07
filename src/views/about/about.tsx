@@ -87,41 +87,25 @@ const About = () => {
           </ul>
           <br />
           <h3>Our Values</h3>
-          <ol className="ordered-list">
-            <li>
-              <strong>Quality Craftsmanship: </strong>We take pride in our work
-              and use only the finest materials and techniques. Our commitment
-              to quality ensures that your exterior improvements will stand the
-              test of time.
-            </li>
-            <li>
-              <strong>Integrity and Communication: </strong>Honesty is at the
-              heart of our business. We provide free consultations and detailed
-              estimates, along with open communication, in an effort to build
-              trust so you know exactly what to expect throughout the project.
-            </li>
-            <li>
-              <strong>Customer-Centric Focused: </strong>Our clients are our
-              priority. We believe in open communication and collaboration,
-              ensuring that you are completely satisfied with your project. Your
-              satisfaction and referral is our ultimate goal.{" "}
-            </li>
-          </ol>
-
-          <br />
-          <h3>Meet Our Team</h3>
           <p>
-            Nate and Adam are co-owners and childhood friends who saw a need for
-            affordable, durable stucco repair in our community. Using their
-            expertise in stucco and operations, they took a risk in the middle
-            of a financial crisis to provide a solution for homeowners and
-            businesses. Our extended team is made up of skilled professionals
-            with extensive experience in exterior renovations. Together, we are
-            committed to delivering exceptional results and a seamless
-            experience for every client.
+            <strong>Quality Craftsmanship: </strong>We take pride in our work
+            and use only the finest materials and techniques. Our commitment to
+            quality ensures that your exterior improvements will stand the test
+            of time.
           </p>
-          <br />
-          <h3>Get in Touch</h3>
+          <p>
+            <strong>Integrity and Communication: </strong>Honesty is at the
+            heart of our business. We provide free consultations and detailed
+            estimates, along with open communication, in an effort to build
+            trust so you know exactly what to expect throughout the project.
+          </p>
+          <p>
+            <strong>Customer-Centric Focused: </strong>Our clients are our
+            priority. We believe in open communication and collaboration,
+            ensuring that you are completely satisfied with your project. Your
+            satisfaction and referral is our ultimate goal. <br />
+          </p>
+
           <br />
           <p>
             Ready to elevate your property’s exterior? Contact us today for a
@@ -132,6 +116,9 @@ const About = () => {
           </p>
         </div>
         <div className="aboutRight">
+          <p id="scheduleConsultation">
+            <a href="/contact">Schedule your free consultation</a>
+          </p>
           <div className="card-container">
             {cardData.map((card) => (
               <CardComponent
@@ -141,6 +128,22 @@ const About = () => {
               />
             ))}
           </div>
+
+          <p>
+            <h4>Meet Our Team</h4>
+            Nate and Adam are co-owners and childhood friends who saw a need for
+            affordable, durable stucco repair in our community. Using their
+            expertise in stucco and operations, they took a risk in the middle
+            of a financial crisis to provide a solution for homeowners and
+            businesses. Our extended team is made up of skilled professionals
+            with extensive experience in exterior renovations. Together, we are
+            committed to delivering exceptional results and a seamless
+            experience for every client.
+          </p>
+          <br />
+          <h3 className="getintouch">
+            <a href="/contact">Get in Touch!</a>
+          </h3>
         </div>
       </div>
     </div>
