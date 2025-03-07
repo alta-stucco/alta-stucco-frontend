@@ -3,6 +3,12 @@ import "./navigation.css";
 import mainLogo from "../../../src/assets/main_logo.png";
 
 const Navigation = () => {
+  const handleContactClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    window.location.href = "/contact";
+  };
   return (
     <nav>
       <div className="logo">
@@ -21,7 +27,9 @@ const Navigation = () => {
           <Link to="/faq">FAQs</Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <a href="/contact" onClick={handleContactClick}>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
