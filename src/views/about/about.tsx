@@ -1,15 +1,15 @@
-import CardComponent from "../../components/card/card.tsx";
+// import CardComponent from "../../components/card/card.tsx";
 import { Helmet } from "react-helmet";
 import "./about.css";
 
-const cardData = [
-  {
-    id: 1,
-    title: "Nate Olsen and Adam Larsen ",
-    imagePath: "https://via.placeholder.com/150",
-    // imagePath: "src/assets/react.svg",
-  },
-];
+// const cardData = [
+//   {
+//     id: 1,
+//     title: "Nate Olsen and Adam Larsen ",
+//     imagePath: "https://via.placeholder.com/150",
+//     // imagePath: "src/assets/react.svg",
+//   },
+// ];
 
 const About = () => {
   return (

@@ -3,7 +3,6 @@ import "./home.css";
 import ImageGrid from "../../components/imageGrid/imageGrid.tsx";
 
 import CardHomeText from "../../components/card_text/card_text.tsx";
-import EmbeddedForm from "../../components/embeddedLink/embeddedLink.tsx";
 
 const Home = () => {
   const cardHomeData = [
