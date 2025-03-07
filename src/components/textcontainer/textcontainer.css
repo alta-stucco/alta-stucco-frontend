@@ -25,17 +25,28 @@
     text-align: left;
     color: #000000;
     margin: 10px 0;
-    word-wrap: break-word; /* Ensure long words break to the next line */
+    /* word-wrap: break-word; Ensure long words break to the next line */
 }
 
 #scheduleConsultation {
     font-weight: bold;
     text-align: center;
     font-family: "Yeseva One", serif;
-    font-size: 22px;
+    font-size: 30px;
     color: #0097b2;
     margin: 10px 0;
     word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+#scheduleConsultation a {
+    color: #0097b2; /* Ensure the link color matches the text color */
+    font-family: 'Yeseva One', serif;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+#scheduleConsultation a:hover {
+    font-family: 'Yeseva One', serif;
+    text-decoration: none; /* Add underline on hover */
 }
 
 @media (max-width: 600px) {
