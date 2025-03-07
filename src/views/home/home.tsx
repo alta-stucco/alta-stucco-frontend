@@ -52,7 +52,6 @@ const Home = () => {
             <CardHomeText key={index} title={card.title} text={card.text} />
           ))}
         </div>
-        <EmbeddedForm />
       </div>
     </>
   );
