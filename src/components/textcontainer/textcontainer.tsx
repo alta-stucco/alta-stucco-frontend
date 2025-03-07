@@ -3,7 +3,7 @@ import "./textcontainer.css";
 export default function TextContainer() {
   return (
     <div className="text-center">
-      <p id="fullRange">Full range of exterior services.</p>
+      <p id="scheduleConsultation">Schedule your free consultation</p>
       <p id="partnerships">
         Residential
         <br />
@@ -13,7 +13,6 @@ export default function TextContainer() {
         <br />
         Partnerships
       </p>
-      <p id="scheduleConsultation">Schedule your free consultation</p>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import "./home.css";
 import ImageGrid from "../../components/imageGrid/imageGrid.tsx";
 
 import CardHomeText from "../../components/card_text/card_text.tsx";
+import EmbeddedForm from "../../components/embeddedLink/embeddedLink.tsx";
 
 const Home = () => {
   const cardHomeData = [
@@ -15,7 +16,7 @@ const Home = () => {
       text: "Add character or repair your existing stone to withstand Utah's harsh weather conditions.",
     },
     {
-      title: "Fascia, Soffit & Gutters",
+      title: "Fascia & Soffit",
       text: "Protect your roof and prevent moisture build up with expertly installed, high quality fascia and soffit.",
     },
     {
@@ -51,6 +52,7 @@ const Home = () => {
             <CardHomeText key={index} title={card.title} text={card.text} />
           ))}
         </div>
+        <EmbeddedForm />
       </div>
     </>
   );
