@@ -12,7 +12,7 @@ const Home = () => {
     },
     {
       title: "Stone, Brick & Rock",
-      text: "Add character or repair your existing stone to withstand Utah’s harsh weather conditions.",
+      text: "Add character or repair your existing stone to withstand Utah's harsh weather conditions.",
     },
     {
       title: "Fascia, Soffit & Gutters",
