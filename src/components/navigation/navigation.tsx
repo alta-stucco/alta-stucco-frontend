@@ -20,7 +20,7 @@ const Navigation = () => {
           <Link to="/faq">FAQs</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </nav>
