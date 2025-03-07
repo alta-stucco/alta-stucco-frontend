@@ -1,27 +1,21 @@
-import './textcontainer.css'
+import { Link } from "react-router-dom";
+import "./textcontainer.css";
 
 export default function TextContainer() {
-    return (
-        <div className="text-center">
-            <p id="fullRange">
-                Full range of exterior services.
-            </p>
-            <p id="partnerships">
-                residential
-                <br/>
-                commercial
-                <br/>
-
-                custom design
-                <br/>
-
-                partnerships
-            </p>
-            <p id="scheduleConsultation">
-                Schedule your
-                free consultation
-            </p>
-
-        </div>
-    )
+  return (
+    <div className="text-center">
+      <p id="scheduleConsultation">
+        <a href="/contact">Schedule your free consultation</a>
+      </p>
+      <p id="partnerships">
+        Residential
+        <br />
+        Commercial
+        <br />
+        Custom solutions
+        <br />
+        Partnerships
+      </p>
+    </div>
+  );
 }

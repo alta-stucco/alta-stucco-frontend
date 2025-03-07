@@ -1,3 +1,12 @@
+.home-text {
+    font-family: "Yeseva One", serif;
+    text-align: left;
+    font-size: 36px;
+    color: #000000;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
 .contact-home {
     color: #000000 !important;
     text-decoration: none !important;
@@ -71,3 +80,4 @@
         font-size: 1em; /* Adjust font size for readability */
     }
 }
+

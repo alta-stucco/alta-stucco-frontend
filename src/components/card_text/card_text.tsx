@@ -12,7 +12,7 @@ export default function CardHomeText({title, text}:CardTextProps) {
   return (
       <div className="card-text-container">
 
-        <Card>
+        <Card className="card-text">
             <CardBody>
 
             <Card.Title>{title}</Card.Title>

@@ -12,6 +12,12 @@
     /*border: 1px solid #ccc; !* Add border similar to the images *!*/
 }
 
+.card-text {
+
+    /* this spaces out tht things so it looks good on a website */
+    min-height:135px;
+}
+
 .card-body {
     border: none;
     box-shadow: none;
