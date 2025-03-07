@@ -1,0 +1,36 @@
+.about-image-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px; /* Adjust the gap between images as needed */
+    width: 100%; /* Ensure the grid stays within the main content */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    justify-content: space-between; /* Distribute images evenly */
+  }
+
+  .about-image-grid img {
+    max-width: calc(20%);
+    height: auto;
+    flex: 1 1 0 auto; /* Adjust flex properties as needed */
+  }
+
+  .about-image-grid img:nth-child(3) {
+    margin-left: 12%; /* Adjust the margin as needed */
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    .about-image-grid {
+      flex-wrap: wrap;
+      justify-content: center; /* Center images on smaller screens */
+    }
+
+    .about-image-grid img {
+      max-width: 100%;
+      flex: 1 1 100%; /* Make each image take full width on smaller screens */
+      margin-left: 0; /* Remove margin on smaller screens */
+    }
+
+    .about-image-grid img:nth-child(3) {
+      margin-left: 0; /* Remove margin on smaller screens */
+    }
+  }

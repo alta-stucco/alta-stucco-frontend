@@ -61,7 +61,8 @@ export default function Faq() {
   ];
   return (
     <div>
-      <h1>About Alta Stucco</h1>
+      <br />
+      <h3>About Alta Stucco</h3>
       <Accordion>
         {altaStuccoQuestions.map((faq, index) => (
           <AccordionExpander
@@ -71,7 +72,7 @@ export default function Faq() {
           />
         ))}
       </Accordion>
-      <h1>About Stucco</h1>
+      <h3>About Stucco</h3>
       <Accordion>
         {stuccoQuestions.map((faq, index) => (
           <AccordionExpander
