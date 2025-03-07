@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./textcontainer.css";
 
 export default function TextContainer() {
