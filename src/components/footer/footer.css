@@ -1,69 +1,62 @@
-/* footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 1%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* css */
+/* Strong global overrides to prevent sitemap from being pulled to viewport top-left */
+.sitemap,
+.sitemap-list,
+.sitemap .sitemap-list {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    float: none !important;
+    margin: 0 !important;
+    z-index: 2 !important;
+    display: block !important;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap; /* Allow items to wrap if necessary
-    max-width: 1200px;
-    padding: 2%;
+/* Ensure anchors inside any sitemap are visible and interactive */
+.sitemap a,
+.sitemap-list a {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.footer-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.footer-left .social-icons {
-    color: #ffffff;
-    display: flex;
-    flex-direction: row; /* Display logos horizontally
-    justify-content: center;
-    margin-top: 10px; /* Add some space between text and logos
-}
-
-.footer-left .social-icons a {
-    margin: 0 10px; /* Adjust the margin as needed
-    color: #ffffff;
-}
-    */
-
+/* Footer base */
 .email-footer {
     color: #ffffff;
     text-decoration: none;
 }
 
-
 footer {
+    position: relative; /* containing block for absolutely positioned children elsewhere */
+    z-index: 0;
     background-color: #000000;
     color: #ffffff;
     padding: 1%;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/* Main footer content layout */
 .footer-content {
     display: flex;
-    justify-content: space-between; /* Space between items */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     padding: 2%;
+    gap: 16px;
 }
 
+/* Left/address */
 .footer-content .address {
     flex: 1;
     text-align: left;
@@ -72,6 +65,7 @@ footer {
     justify-content: center;
 }
 
+/* Contact */
 .footer-content .contact {
     flex: 1;
     text-align: center;
@@ -80,16 +74,118 @@ footer {
     justify-content: center;
 }
 
+/* Sitemap section styles (apply whether sitemap is inside .footer-content or .footer-copyright) */
+.footer-content .sitemap,
+.footer-copyright .sitemap {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* ensure sitemap stays in normal flow even if other styles attempt to pull it out */
+    position: static !important;
+    float: none !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin: 0;
+    z-index: 1;
+}
+
+.footer-content .sitemap p,
+.footer-copyright .sitemap p {
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+/* List layout for sitemap (both locations) */
+.footer-content .sitemap .sitemap-list,
+.footer-copyright .sitemap .sitemap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* make sure the list itself isn't positioned out of the footer */
+    position: static !important;
+    float: none !important;
+}
+
+/* List items and links */
+.footer-content .sitemap .sitemap-list li,
+.footer-copyright .sitemap .sitemap-list li {
+    margin: 0;
+}
+
+/* Strong specificity to avoid global overrides; keeps links visible and interactive */
+.footer-content .sitemap .sitemap-list a,
+.footer-copyright .sitemap .sitemap-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95em;
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+/* Hover/focus states */
+.footer-content .sitemap .sitemap-list a:hover,
+.footer-content .sitemap .sitemap-list a:focus,
+.footer-copyright .sitemap .sitemap-list a:hover,
+.footer-copyright .sitemap .sitemap-list a:focus {
+    text-decoration: underline;
+}
+
+/* Social section */
 .footer-content .social {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end; /* Align to the right */
-    text-align: center; /* Center text within the section */
+    align-items: flex-end;
+    text-align: center;
 }
 
+/* Copyright */
 .footer-copyright {
     margin-top: 1%;
     font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer-content .address,
+    .footer-content .contact,
+    .footer-content .sitemap,
+    .footer-content .social {
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-content .social {
+        align-items: center;
+    }
+
+    /* Ensure sitemap layout stays readable on small screens */
+    .footer-content .sitemap .sitemap-list,
+    .footer-copyright .sitemap .sitemap-list {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
 }
